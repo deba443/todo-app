@@ -1,0 +1,46 @@
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+.todo_input{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 50px;
+    /* position: absolute; */
+    margin-top: 30vh;
+
+}
+.todo_input--field{
+    /* position: relative;
+    top: 30vh;
+    left: 30vw; */
+    border: 0.5px solid #808080;
+    border-radius: 5px;
+    padding: 8px;
+}
+.todo_input--button{
+    padding: 6px;
+    border-radius: 3px;
+    width: 60px;
+    background: #1d30db;
+    color: white;
+    cursor: pointer;
+
+}
+.todo-content{
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: columngap
+    3px;
+    margin-top: 10px;
+    padding-left: 50px;
+}
+ul li{
+    list-style: none;
+}
