@@ -3,6 +3,9 @@
 *::before{
     box-sizing: border-box;
 }
+html{
+    font-family: 'Poppins', sans-serif;
+}
 
 .todo_input{
     max-width: 1000px;
@@ -15,6 +18,12 @@
     margin-top: 30vh;
 
 }
+ form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+ }
 .todo_input--field{
     /* position: relative;
     top: 30vh;
@@ -22,25 +31,50 @@
     border: 0.5px solid #808080;
     border-radius: 5px;
     padding: 8px;
+    height: 50px;
 }
 .todo_input--button{
     padding: 6px;
     border-radius: 3px;
-    width: 60px;
+    min-width: 60px;
     background: #1d30db;
     color: white;
     cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    border:3px solid #1d30db;
+    height: 45px;
 
 }
 .todo-content{
     max-width: 1000px;
     margin: 0 auto;
     display: flex;
-    flex-direction: columngap
-    3px;
-    margin-top: 10px;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 50px;
     padding-left: 50px;
 }
-ul li{
+li{
     list-style: none;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(233, 225, 225, 0.4);
+    background: rgb(8, 30, 226);
+    color: rgba(255, 255, 255, 0.925);
+    transition: 0.3s;
+    min-width: 30%;
+    padding: 15px;
+    /* color: black;  */
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: larger;
+    
+}
+.delete-todo,.edit-todo{
+    cursor: pointer;
+}
+#editData{
+    background: #da0808;
+    border: 3px solid #da0808;
 }

@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to-do</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet"> -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+    </style>
+    <!-- <link rel="s
+        tylesheet" href=""> -->
     <!-- <script src="./index.js"></script> -->
 
 </head>
+
 <body>
     <section class="todo_input">
-        <input type="text" placeholder="add to-do" class="todo_input--field">
-        <button class="todo_input--button">Add</button>
+        <form>
+            <input type="text" placeholder="add your task" class="todo_input--field" id="name">
+            <button class="todo_input--button" type="submit" onclick="manageData()">Add</button>
+            <button class="todo_input--button" type="submit" id="editData" onclick="updateData()">Update</input>
+        </form>
+        <div id="msg"></div>
     </section>
     <section class="todo-content">
-        <ul class="todo-content_list">
-            <li>I wake up at 7.00</li>
-        </ul>
     </section>
-    <script src="./index.js">
+    <script src="./app.js">
     </script>
 </body>
+
 </html>
