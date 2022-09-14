@@ -13,9 +13,11 @@ html{
     display: flex;
     justify-content:center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     /* position: absolute; */
     margin-top: 30vh;
+    font-family: 'Poppins', sans-serif;
+    font-size: larger;
 
 }
  form{
