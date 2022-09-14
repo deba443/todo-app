@@ -57,7 +57,7 @@ html{
 li{
     list-style: none;
     border-radius: 5px;
-    box-shadow: 0 4px 8px 0 rgba(233, 225, 225, 0.4);
+    box-shadow: 0 4px 8px 0 rgba(233, 225, 225, 0.5);
     background: rgb(8, 30, 226);
     color: rgba(255, 255, 255, 0.925);
     transition: 0.3s;

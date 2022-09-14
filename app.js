@@ -1,4 +1,4 @@
-let id = 12345678;
+let id = 'deba';
 // localStorage.clear();
 selectData();
 function manageData() {
@@ -8,7 +8,7 @@ function manageData() {
         document.getElementById('msg').innerHTML = 'please enter your name'
     }
     else {
-        if (id ===12345678) {
+        if (id ==='deba') {
             let arr = getCrudItem();
             // console.log(arr)
             if (arr == null) {
