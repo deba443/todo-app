@@ -45,6 +45,9 @@ html{
     height: 45px;
 
 }
+#msg{
+    color:#da0808;
+}
 .todo-content{
     max-width: 1000px;
     margin: 0 auto;
