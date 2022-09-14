@@ -52,12 +52,16 @@ function selectData() {
 
         }
         document.querySelector('.todo-content').innerHTML=html;
+        document.getElementById("name").focus();
     }
 
 }
 function editData(keys) {
     // document.getElementById("editClass").style.display="inline";
     // // document.getElementById("addClass").style.display="none";
+    document.getElementById("editData").style.display="inline";
+    document.getElementById("addData").style.display="none";
+    document.getElementById("cancelData").style.display="inline";
     id=keys;
     let arr=getCrudItem();
     document.getElementById("name").value=arr[keys];
@@ -86,6 +90,16 @@ function updateData(){
     let arr=getCrudItem()
     arr[id]=name;
     setCrudData(arr);
+    selectData()
 
+
+}
+function cancelData(){
+    let arr=getCrudItem()
+    document.getElementById("name").value=arr[id];
+    setCrudData(arr)
+    document.getElementById("name").value='';
+    document.getElementById("name").focus();
+    selectData()
 
 }
