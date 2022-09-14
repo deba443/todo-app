@@ -67,7 +67,9 @@ function editData(keys) {
     let arr = getCrudItem();
     document.getElementById("name").value = arr[keys];
     document.getElementById("name").focus();
-    preventDelete();
+    if(preventDelete()){
+        preventDelete()
+    }
     selectData();
 
 }
@@ -114,5 +116,6 @@ function preventDelete(){
     document.getElementById("name").value=arr[i];
     // manageData();
     selectData();
+    return 2;
 }
 
